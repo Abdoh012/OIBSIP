@@ -5,13 +5,15 @@ A responsive browser-based calculator built with semantic HTML5, CSS3 Grid, and 
 **Internship:** Oasis Infobyte — Web Development and Designing  
 **Level / Task:** Level 2 — Task 1  
 **Author:** Abdelrahman Mohammed Mahmoud  
-**Status:** In progress — implementation and demo video complete; final submission assets pending
+**Status:** Complete — implementation, screenshots, README, live demo, and demo video finished
 
 ![Calculator interface preview](./screenshots/calculator-preview.png)
 
 ## Live Demo
 
-To be added after GitHub Pages is enabled.
+[Open the live calculator](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task1-Calculator/)
+
+[Project hub](https://abdoh012.github.io/OIBSIP/)
 
 ## Demo Video
 
