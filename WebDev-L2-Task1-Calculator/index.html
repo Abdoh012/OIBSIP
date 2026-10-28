@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CalcFlow, a clean vanilla JavaScript calculator for OIBSIP Level 2."
+    />
+    <title>CalcFlow · OIBSIP Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <a
+          class="wordmark"
+          href="../index.html"
+          aria-label="Back to OIBSIP project studio"
+          >calc<span>//</span>flow</a
+        >
+        <div class="header-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>OIBSIP / L2 · TASK 01</span>
+        </div>
+      </header>
+
+      <section class="calculator-card" aria-labelledby="calculator-title">
+        <div class="card-heading">
+          <div>
+            <p class="eyebrow">PRECISION UTILITY</p>
+            <h1 id="calculator-title">
+              Your next calculation,<br /><em>without the noise.</em>
+            </h1>
+          </div>
+          <p class="keyboard-hint">
+            <kbd aria-hidden="true">⌨</kbd> keyboard ready
+          </p>
+        </div>
+
+        <div class="display" aria-live="polite" aria-atomic="true">
+          <div class="display-expression" id="expression">
+            Ready for your next calculation
+          </div>
+          <div class="display-result" id="result">0</div>
+        </div>
+
+        <div class="calculator-grid" aria-label="Calculator buttons">
+          <button class="key key--utility" type="button" data-action="clear">
+            C
+          </button>
+          <button
+            class="key key--utility"
+            type="button"
+            data-action="backspace"
+            aria-label="Delete last character"
+          >
+            DEL
+          </button>
+          <button
+            class="key key--operator"
+            type="button"
+            data-value="/"
+            aria-label="Divide"
+          >
+            ÷
+          </button>
+          <button
+            class="key key--operator"
+            type="button"
+            data-value="*"
+            aria-label="Multiply"
+          >
+            ×
+          </button>
+
+          <button class="key" type="button" data-value="7">7</button>
+          <button class="key" type="button" data-value="8">8</button>
+          <button class="key" type="button" data-value="9">9</button>
+          <button
+            class="key key--operator"
+            type="button"
+            data-value="-"
+            aria-label="Subtract"
+          >
+            −
+          </button>
+
+          <button class="key" type="button" data-value="4">4</button>
+          <button class="key" type="button" data-value="5">5</button>
+          <button class="key" type="button" data-value="6">6</button>
+          <button
+            class="key key--operator"
+            type="button"
+            data-value="+"
+            aria-label="Add"
+          >
+            +
+          </button>
+
+          <button class="key" type="button" data-value="1">1</button>
+          <button class="key" type="button" data-value="2">2</button>
+          <button class="key" type="button" data-value="3">3</button>
+          <button
+            class="key key--equals"
+            type="button"
+            data-action="equals"
+            aria-label="Equals"
+          >
+            =
+          </button>
+
+          <button class="key key--zero" type="button" data-value="0">0</button>
+          <button class="key" type="button" data-value=".">.</button>
+        </div>
+
+        <p class="calculator-note">
+          <span>Tip</span> Use your keyboard for a faster flow: numbers,
+          operators, Enter, Escape, and Backspace.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
