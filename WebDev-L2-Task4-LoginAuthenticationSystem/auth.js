@@ -149,6 +149,28 @@ function setButtonBusy(button, isBusy, busyLabel) {
   }
 }
 
+function togglePasswordVisibility(button) {
+  const inputId = button.dataset.passwordToggle;
+  const input = document.querySelector(`#${inputId}`);
+  if (!input) return;
+
+  const isPassword = input.type === 'password';
+  input.type = isPassword ? 'text' : 'password';
+  button.setAttribute('aria-pressed', String(!isPassword));
+  button.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+
+  const label = button.querySelector('.password-toggle__label');
+  if (label) label.textContent = isPassword ? 'Hide' : 'Show';
+
+  input.focus();
+}
+
+function initializePasswordToggles() {
+  document.querySelectorAll('.password-toggle').forEach((button) => {
+    button.addEventListener('click', () => togglePasswordVisibility(button));
+  });
+}
+
 function redirect(path) {
   window.location.replace(path);
 }
@@ -240,6 +262,8 @@ function initializeRegisterPage() {
       setButtonBusy(submit, false);
     }
   });
+
+  initializePasswordToggles();
 }
 
 function initializeLoginPage() {
@@ -300,6 +324,8 @@ function initializeLoginPage() {
       setButtonBusy(submit, false);
     }
   });
+
+  initializePasswordToggles();
 }
 
 function initializeDashboardPage() {

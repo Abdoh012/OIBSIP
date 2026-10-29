@@ -237,6 +237,35 @@ h1 em {
   border-color: var(--coral);
   box-shadow: 0 2px 0 var(--coral);
 }
+.password-control {
+  position: relative;
+}
+.password-control input {
+  padding-right: 72px;
+}
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 1;
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  padding: 6px 0 6px 12px;
+  border: 0;
+  color: var(--cyan-deep);
+  background: transparent;
+  font:
+    600 0.64rem/1 "DM Mono",
+    monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  transition: color 160ms ease;
+}
+.password-toggle:hover {
+  color: var(--ink);
+}
 .field-hint {
   margin: -2px 0 0;
   color: var(--muted);

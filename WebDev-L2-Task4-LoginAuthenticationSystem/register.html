@@ -93,16 +93,28 @@
 
             <div class="field-group">
               <label for="register-password">PASSWORD</label>
-              <input
-                id="register-password"
-                name="password"
-                type="password"
-                minlength="8"
-                autocomplete="new-password"
-                placeholder="At least 8 characters + 1 number"
-                aria-describedby="register-password-hint register-password-error"
-                required
-              />
+              <div class="password-control">
+                <input
+                  id="register-password"
+                  name="password"
+                  type="password"
+                  minlength="8"
+                  autocomplete="new-password"
+                  placeholder="At least 8 characters + 1 number"
+                  aria-describedby="register-password-hint register-password-error"
+                  required
+                />
+                <button
+                  class="password-toggle"
+                  type="button"
+                  data-password-toggle="register-password"
+                  aria-controls="register-password"
+                  aria-label="Show password"
+                  aria-pressed="false"
+                >
+                  <span class="password-toggle__label" aria-hidden="true">Show</span>
+                </button>
+              </div>
               <p id="register-password-hint" class="field-hint">
                 8+ characters and at least one number.
               </p>

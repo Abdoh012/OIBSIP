@@ -71,15 +71,27 @@
 
             <div class="field-group">
               <label for="login-password">PASSWORD</label>
-              <input
-                id="login-password"
-                name="password"
-                type="password"
-                autocomplete="current-password"
-                placeholder="Your password"
-                aria-describedby="login-password-error"
-                required
-              />
+              <div class="password-control">
+                <input
+                  id="login-password"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Your password"
+                  aria-describedby="login-password-error"
+                  required
+                />
+                <button
+                  class="password-toggle"
+                  type="button"
+                  data-password-toggle="login-password"
+                  aria-controls="login-password"
+                  aria-label="Show password"
+                  aria-pressed="false"
+                >
+                  <span class="password-toggle__label" aria-hidden="true">Show</span>
+                </button>
+              </div>
               <p
                 id="login-password-error"
                 class="field-error"
