@@ -26,6 +26,7 @@ The folder entry point redirects to `login.html`.
 - Email format validation and a minimum username length of 3 characters.
 - Case-insensitive duplicate username and email checks.
 - Login with either username or email.
+- Password show/hide toggle on both login and registration forms.
 - One generic message for incorrect credentials, without revealing which field was wrong.
 - Salted SHA-256 password hashing with Web Crypto.
 - No plain-text passwords stored in `localStorage`.
@@ -102,6 +103,7 @@ Use `localhost` or HTTPS. The Web Crypto API required for password hashing is no
 
 - [x] Empty registration and login submissions show visible errors.
 - [x] Username, email, and password validation behave as required.
+- [x] Show/hide password toggle works on login and registration forms.
 - [x] Duplicate usernames and emails are rejected case-insensitively.
 - [x] Stored records contain a SHA-256 hash and salt, not the password.
 - [x] Two accounts using the same password produce different hashes.
