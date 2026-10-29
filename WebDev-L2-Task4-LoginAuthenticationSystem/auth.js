@@ -156,7 +156,7 @@ function togglePasswordVisibility(button) {
 
   const isPassword = input.type === 'password';
   input.type = isPassword ? 'text' : 'password';
-  button.setAttribute('aria-pressed', String(!isPassword));
+  button.setAttribute('aria-pressed', String(isPassword));
   button.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
 
   const label = button.querySelector('.password-toggle__label');
