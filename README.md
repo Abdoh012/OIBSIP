@@ -19,7 +19,7 @@ The hub links to every build as it becomes available.
 |---|------|--------|-----------|--------|
 | 1 | Calculator | [WebDev-L2-Task1-Calculator](./WebDev-L2-Task1-Calculator/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task1-Calculator/) | Complete |
 | 2 | Tribute Page | [WebDev-L2-Task2-TributePage](./WebDev-L2-Task2-TributePage/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task2-TributePage/) | Complete |
-| 3 | To-Do Web App | [WebDev-L2-Task3-ToDoWebApp](./WebDev-L2-Task3-ToDoWebApp/) | — | Planned |
+| 3 | To-Do Web App | [WebDev-L2-Task3-ToDoWebApp](./WebDev-L2-Task3-ToDoWebApp/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task3-ToDoWebApp/) | Complete |
 | 4 | Login Authentication System | [WebDev-L2-Task4-LoginAuthenticationSystem](./WebDev-L2-Task4-LoginAuthenticationSystem/) | — | Planned |
 
 > The official Level 2 completion rule requires all four tasks above.
@@ -51,7 +51,12 @@ OIBSIP/
 │   ├── assets/
 │   └── screenshots/
 ├── WebDev-L2-Task3-ToDoWebApp/
-│   └── README.md
+│   ├── index.html
+│   ├── styles.css
+│   ├── script.js
+│   ├── README.md
+│   ├── OIBSIP-To-Do-App-Demo.mp4
+│   └── screenshots/
 └── WebDev-L2-Task4-LoginAuthenticationSystem/
     └── README.md
 ```

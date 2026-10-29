@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A focused, local-first task board for adding, completing, editing, and managing daily tasks." />
+    <title>Focus Board · OIBSIP To-Do App</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23152335'/%3E%3Cpath d='M17 33l10 10 21-23' fill='none' stroke='%2377d6d0' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="wordmark" href="../index.html" aria-label="Back to the OIBSIP Level 2 project studio">
+          <span class="wordmark-mark" aria-hidden="true">//</span> focus board
+        </a>
+        <p class="save-status"><span class="status-dot" aria-hidden="true"></span> Saved on this device</p>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">OIBSIP / TASK 03 · LOCAL-FIRST TASKS</p>
+        <div class="intro-row">
+          <div>
+            <h1 id="page-title">One clear<br /><em>next step.</em></h1>
+            <p class="intro-copy">Capture what matters, finish it with intention, and leave a little more room to breathe.</p>
+          </div>
+          <div class="today-card" aria-label="Today's focus summary">
+            <span class="today-label">TODAY'S FOCUS</span>
+            <strong id="focus-number">0</strong>
+            <span id="focus-label">tasks waiting</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="composer" aria-labelledby="composer-title">
+        <div class="composer-heading">
+          <p class="section-label" id="composer-title">ADD A TASK</p>
+          <p class="helper-copy" id="task-help">Keep it short and actionable.</p>
+        </div>
+        <form id="task-form" class="task-form" novalidate>
+          <label class="sr-only" for="task-input">What needs your attention?</label>
+          <input
+            id="task-input"
+            name="task"
+            type="text"
+            maxlength="160"
+            autocomplete="off"
+            placeholder="What needs your attention?"
+            aria-describedby="task-help task-error"
+            required
+          />
+          <button class="add-button" type="submit">
+            <span>Add task</span>
+            <span class="add-icon" aria-hidden="true">+</span>
+          </button>
+        </form>
+        <p id="task-error" class="form-error" role="alert" hidden></p>
+      </section>
+
+      <section class="board" aria-label="Task board">
+        <section class="task-column task-column--pending" aria-labelledby="pending-title">
+          <div class="column-heading">
+            <div>
+              <p class="section-label">IN PROGRESS</p>
+              <h2 id="pending-title">Pending tasks</h2>
+            </div>
+            <span class="task-count" id="pending-count">0 pending</span>
+          </div>
+          <p class="column-description">A small list of promises to your future self.</p>
+          <div id="pending-empty" class="empty-state">
+            <span class="empty-symbol" aria-hidden="true">○</span>
+            <p>Nothing pending — enjoy the breathing room.</p>
+          </div>
+          <ul id="pending-list" class="task-list" aria-label="Pending tasks"></ul>
+        </section>
+
+        <section class="task-column task-column--completed" aria-labelledby="completed-title">
+          <div class="column-heading">
+            <div>
+              <p class="section-label">DONE &amp; DUSTED</p>
+              <h2 id="completed-title">Completed tasks</h2>
+            </div>
+            <span class="task-count" id="completed-count">0 completed</span>
+          </div>
+          <p class="column-description">Progress is proof. Keep the wins in view.</p>
+          <div id="completed-empty" class="empty-state">
+            <span class="empty-symbol" aria-hidden="true">✓</span>
+            <p>Completed work will collect here.</p>
+          </div>
+          <ul id="completed-list" class="task-list" aria-label="Completed tasks"></ul>
+        </section>
+      </section>
+
+      <footer class="app-footer">
+        <p><span class="footer-key">Enter</span> adds a task <span aria-hidden="true">·</span> <span class="footer-key">Esc</span> cancels an edit</p>
+        <p>Tasks stay here after refreshes.</p>
+      </footer>
+    </main>
+
+    <p id="live-region" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+    <script src="./script.js"></script>
+  </body>
+</html>
