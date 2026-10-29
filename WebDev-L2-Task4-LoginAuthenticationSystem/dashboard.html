@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Protected dashboard for the OIBSIP Private Terminal authentication demo."
+    />
+    <title>Workspace · Private Terminal</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1b2a'/%3E%3Cpath d='M20 29h24v21H20z' fill='none' stroke='%2377d6d0' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M25 29v-7a7 7 0 0 1 14 0v7' fill='none' stroke='%2377d6d0' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='39' r='3' fill='%2377d6d0'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="dashboard" class="dashboard-body">
+    <main id="dashboard-content" class="dashboard-shell" hidden>
+      <header class="dashboard-header">
+        <a
+          class="wordmark wordmark--dark"
+          href="../index.html"
+          aria-label="Back to OIBSIP project studio"
+          ><span aria-hidden="true">//</span> private terminal</a
+        >
+        <div class="session-controls">
+          <span class="session-badge"
+            ><span class="beacon" aria-hidden="true"></span> AUTHENTICATED</span
+          ><button id="logout-button" class="logout-button" type="button">
+            Log out <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="dashboard-hero" aria-labelledby="dashboard-title">
+        <div>
+          <p class="eyebrow">SECURE WORKSPACE / SESSION ACTIVE</p>
+          <h1 id="dashboard-title">
+            Welcome back,<br /><em data-dashboard-username>there.</em>
+          </h1>
+          <p class="dashboard-intro">
+            You passed the client-side session check. This page is protected
+            from direct access without an active sign-in.
+          </p>
+        </div>
+        <div class="identity-chip">
+          <span class="avatar" data-dashboard-initial>A</span>
+          <div>
+            <span class="chip-label">SIGNED IN AS</span
+            ><strong data-dashboard-email>you@example.com</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid" aria-label="Authentication details">
+        <article class="dashboard-card dashboard-card--primary">
+          <p class="section-label">SESSION CHECK</p>
+          <h2>Access<br />granted.</h2>
+          <p>
+            Your local session is valid for this browser until you choose to log
+            out.
+          </p>
+          <span class="card-code">SESSION / ACTIVE</span>
+        </article>
+        <article class="dashboard-card">
+          <p class="section-label">CREDENTIAL STORE</p>
+          <h2>Hashed,<br />not exposed.</h2>
+          <p>
+            The stored record includes a SHA-256 password hash and a unique
+            local salt, never the password itself.
+          </p>
+          <span class="card-code">SHA-256 / LOCAL DEMO</span>
+        </article>
+        <article class="dashboard-card">
+          <p class="section-label">ROUTE GUARD</p>
+          <h2>Private,<br />by default.</h2>
+          <p>
+            Opening this page without a recognized session redirects the visitor
+            to the Login screen.
+          </p>
+          <span class="card-code">GUARD / ENABLED</span>
+        </article>
+      </section>
+
+      <footer class="dashboard-footer">
+        <span>OIBSIP · TASK 04</span
+        ><span>Front-end authentication learning demo</span>
+      </footer>
+    </main>
+    <main id="session-check" class="session-check" aria-live="polite">
+      <span class="beacon" aria-hidden="true"></span> Checking secure session…
+    </main>
+    <script src="./auth.js"></script>
+  </body>
+</html>

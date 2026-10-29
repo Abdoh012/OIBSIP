@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sign in to the OIBSIP Private Terminal authentication demo."
+    />
+    <title>Sign in · Private Terminal</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d1b2a'/%3E%3Cpath d='M20 29h24v21H20z' fill='none' stroke='%2377d6d0' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M25 29v-7a7 7 0 0 1 14 0v7' fill='none' stroke='%2377d6d0' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='39' r='3' fill='%2377d6d0'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="login">
+    <main class="auth-layout">
+      <aside class="identity-panel">
+        <a
+          class="wordmark"
+          href="../index.html"
+          aria-label="Back to OIBSIP project studio"
+          ><span aria-hidden="true">//</span> private terminal</a
+        >
+        <div class="identity-copy">
+          <p class="eyebrow">
+            <span class="beacon" aria-hidden="true"></span> ACCESS / 04
+          </p>
+          <h1>Private by<br /><em>design.</em></h1>
+          <p>
+            A small authentication demo that keeps credentials hashed and your
+            workspace behind a session check.
+          </p>
+        </div>
+        <div class="security-note">
+          <span class="note-index">01</span>
+          <p>
+            <strong>SHA-256 protected</strong><br />Passwords are transformed
+            before they are saved.
+          </p>
+        </div>
+      </aside>
+
+      <section class="auth-panel" aria-labelledby="login-title">
+        <div class="auth-card">
+          <p class="eyebrow">WELCOME BACK</p>
+          <h2 id="login-title">Sign in to your workspace.</h2>
+          <p class="auth-intro">
+            Use the username or email address connected to your account.
+          </p>
+
+          <form id="login-form" class="auth-form" novalidate>
+            <div class="field-group">
+              <label for="login-credential">USERNAME OR EMAIL</label>
+              <input
+                id="login-credential"
+                name="credential"
+                type="text"
+                autocomplete="username"
+                placeholder="e.g. amohammed"
+                aria-describedby="login-credential-error"
+                required
+              />
+              <p
+                id="login-credential-error"
+                class="field-error"
+                data-error-for="login-credential"
+              ></p>
+            </div>
+
+            <div class="field-group">
+              <label for="login-password">PASSWORD</label>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                placeholder="Your password"
+                aria-describedby="login-password-error"
+                required
+              />
+              <p
+                id="login-password-error"
+                class="field-error"
+                data-error-for="login-password"
+              ></p>
+            </div>
+
+            <p
+              id="login-feedback"
+              class="form-feedback"
+              role="alert"
+              aria-live="polite"
+              hidden
+            ></p>
+            <button class="submit-button" type="submit">
+              <span>Log in</span><span aria-hidden="true">→</span>
+            </button>
+          </form>
+
+          <p class="auth-switch">New here?</p>
+          <p><a href="./register.html">Create an account</a></p>
+        </div>
+        <p class="panel-meta">
+          CLIENT-SIDE DEMO <span aria-hidden="true">·</span> LOCAL SESSION
+        </p>
+      </section>
+    </main>
+    <script src="./auth.js"></script>
+  </body>
+</html>

@@ -20,7 +20,7 @@ The hub links to every build as it becomes available.
 | 1 | Calculator | [WebDev-L2-Task1-Calculator](./WebDev-L2-Task1-Calculator/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task1-Calculator/) | Complete |
 | 2 | Tribute Page | [WebDev-L2-Task2-TributePage](./WebDev-L2-Task2-TributePage/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task2-TributePage/) | Complete |
 | 3 | To-Do Web App | [WebDev-L2-Task3-ToDoWebApp](./WebDev-L2-Task3-ToDoWebApp/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task3-ToDoWebApp/) | Complete |
-| 4 | Login Authentication System | [WebDev-L2-Task4-LoginAuthenticationSystem](./WebDev-L2-Task4-LoginAuthenticationSystem/) | — | Planned |
+| 4 | Login Authentication System | [WebDev-L2-Task4-LoginAuthenticationSystem](./WebDev-L2-Task4-LoginAuthenticationSystem/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task4-LoginAuthenticationSystem/) | Complete |
 
 > The official Level 2 completion rule requires all four tasks above.
 
@@ -58,7 +58,16 @@ OIBSIP/
 │   ├── OIBSIP-To-Do-App-Demo.mp4
 │   └── screenshots/
 └── WebDev-L2-Task4-LoginAuthenticationSystem/
-    └── README.md
+    ├── index.html
+    ├── login.html
+    ├── register.html
+    ├── dashboard.html
+    ├── auth.js
+    ├── styles.css
+    ├── research.md
+    ├── README.md
+    ├── OIBSIP-Auth-System-Demo.mp4
+    └── screenshots/
 ```
 
 Each task folder follows the required naming format:
