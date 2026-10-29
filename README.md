@@ -18,7 +18,7 @@ The hub links to every build as it becomes available.
 | # | Task | Folder | Live Demo | Status |
 |---|------|--------|-----------|--------|
 | 1 | Calculator | [WebDev-L2-Task1-Calculator](./WebDev-L2-Task1-Calculator/) | [Open](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task1-Calculator/) | Complete |
-| 2 | Tribute Page | [WebDev-L2-Task2-TributePage](./WebDev-L2-Task2-TributePage/) | — | Planned |
+| 2 | Tribute Page | [WebDev-L2-Task2-TributePage](./WebDev-L2-Task2-TributePage/) | — | In progress |
 | 3 | To-Do Web App | [WebDev-L2-Task3-ToDoWebApp](./WebDev-L2-Task3-ToDoWebApp/) | — | Planned |
 | 4 | Login Authentication System | [WebDev-L2-Task4-LoginAuthenticationSystem](./WebDev-L2-Task4-LoginAuthenticationSystem/) | — | Planned |
 
@@ -44,7 +44,12 @@ OIBSIP/
 │   ├── README.md
 │   └── screenshots/
 ├── WebDev-L2-Task2-TributePage/
-│   └── README.md
+│   ├── index.html
+│   ├── styles.css
+│   ├── research.md
+│   ├── README.md
+│   ├── assets/
+│   └── screenshots/
 ├── WebDev-L2-Task3-ToDoWebApp/
 │   └── README.md
 └── WebDev-L2-Task4-LoginAuthenticationSystem/
