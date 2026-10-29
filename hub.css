@@ -96,6 +96,33 @@ h1 {
   transform: translateY(-3px);
   box-shadow: 0 12px 28px rgba(86, 224, 255, 0.2);
 }
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 17px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    border-color 0.18s ease,
+    color 0.18s ease;
+}
+.secondary-link:hover,
+.secondary-link:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  color: var(--accent);
+}
 .section-heading {
   display: flex;
   align-items: end;
