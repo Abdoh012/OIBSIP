@@ -5,13 +5,15 @@ A responsive editorial tribute page celebrating **Ahmed Zewail**, the Egyptian-A
 **Internship:** Oasis Infobyte — Web Development and Designing  
 **Level / Task:** Level 2 — Task 2  
 **Author:** Abdelrahman Mohammed Mahmoud  
-**Status:** In progress — implementation, screenshots, and demo video complete; live demo pending
+**Status:** Complete — implementation, screenshots, live demo, and demo video finished
 
 ![Desktop tribute page](./screenshots/tribute-desktop.png)
 
 ## Live Demo
 
-To be added after GitHub Pages deployment.
+[Open the live tribute page](https://abdoh012.github.io/OIBSIP/WebDev-L2-Task2-TributePage/)
+
+[Project hub](https://abdoh012.github.io/OIBSIP/)
 
 ## Demo Video
 
